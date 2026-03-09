@@ -5,8 +5,9 @@
  * Description: Набор фиксов для импорта: разрешает внешние хосты, увеличивает память, включает отладку импорта
  * Version:     1.0
  * Author:      Victor Romanov
- * Author URI:  
- * License:     GPL v2 or later
+ * Author URI: 
+ * License: GPL v2 or later 
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: fix-import-settings
  */
 
@@ -86,9 +87,8 @@ add_action( 'admin_notices', function() {
     }
 });
 
-// Очистка при деактивации (опционально)
+// Очистка при деактивации
 register_deactivation_hook( __FILE__, 'fix_import_settings_deactivate' );
 function fix_import_settings_deactivate() {
-    // Здесь можно убрать временные настройки, если нужно
-    // Но define() нельзя убрать, они действуют только на время выполнения
+
 }
